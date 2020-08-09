@@ -4,7 +4,7 @@ import pprint
 
 client=MongoClient()
 db=client.events
-with open(r'C:\Users\Prashant\Desktop\data_file.json', encoding='utf-8-sig') as f:
+with open(r'C:\Users\Prashant\Desktop\data.json', encoding='utf-8-sig') as f:
     data=json.load(f)
 event=db.event
 event.insert_one(data)
